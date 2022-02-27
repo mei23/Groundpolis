@@ -123,10 +123,10 @@ describe('Fetch resource', () => {
 			assert.strictEqual(res.location, `/@${alice.username}`);
 		}));
 
-		it('Undecided => AP', async(async () => {
+		it('Undecided => HTML', async(async () => {
 			const res = await simpleGet(`/users/${alice.id}`, UNSPECIFIED);
-			assert.strictEqual(res.status, 200);
-			assert.strictEqual(res.type, AP);
+			assert.strictEqual(res.status, 302);
+			assert.strictEqual(res.location, `/@${alice.username}`);
 		}));
 	});
 
