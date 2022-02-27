@@ -702,21 +702,7 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa@*":
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.11.6.tgz#b7030caa6b44af801c2aea13ba77d74aff7484d5"
-  integrity sha512-BhyrMj06eQkk04C97fovEDQMpLpd2IxCB4ecitaXwOKGq78Wi2tooaDOWOFGajPk8IkQOAtMppApgSVkYe1F/A==
-  dependencies:
-    "@types/accepts" "*"
-    "@types/content-disposition" "*"
-    "@types/cookies" "*"
-    "@types/http-assert" "*"
-    "@types/http-errors" "*"
-    "@types/keygrip" "*"
-    "@types/koa-compose" "*"
-    "@types/node" "*"
-
-"@types/koa@2.11.7":
+"@types/koa@*", "@types/koa@2.11.7":
   version "2.11.7"
   resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.11.7.tgz#3b38f3b9faa66315a84890a771d166fb36463100"
   integrity sha512-1iXJZZWCePoMe9LGSIPWsu5k5RI4ooXijW78c+nljMn3YbUts8PXoEESu1OeFmrazLPl1l97vTxzwvmH32TWVQ==
@@ -737,10 +723,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa__multer@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@types/koa__multer/-/koa__multer-2.0.2.tgz#53d20c5eeab669f1fcb4b82603a8c65f1868611c"
-  integrity sha512-wIRH6jXfKgfMSEGmXo8sTT+13J/RXPYqIfNRwYDE9izsNv125o2pU/7hnnc+c2rGNNO5cG/ahsegZm8h8bDWEQ==
+"@types/koa__multer@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@types/koa__multer/-/koa__multer-2.0.4.tgz#e0f0fd1800a46b51886bebab480a57100f2488b0"
+  integrity sha512-WRkshXhE5rpYFUbbtAjyMhdOOSdbu1XX+2AQlRNM6AZtgxd0/WXMU4lrP7e9tk5HWVTWbx8DOOsVBmfHjSGJ4w==
   dependencies:
     "@types/koa" "*"
 
