@@ -167,7 +167,7 @@
 		"idb-keyval": "5.0.1",
 		"insert-text-at-cursor": "0.3.0",
 		"ip-cidr": "3.0.4",
-		"is-root": "2.1.0",
+		"is-root": "3.0.0",
 		"is-svg": "4.3.0",
 		"js-yaml": "4.0.0",
 		"jsdom": "19.0.0",
