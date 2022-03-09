@@ -136,7 +136,7 @@
 		"cli-highlight": "2.1.11",
 		"commander": "4.1.1",
 		"content-disposition": "0.5.4",
-		"core-js": "3.8.3",
+		"core-js": "3.21.1",
 		"crc-32": "1.2.0",
 		"css-loader": "6.6.0",
 		"cssnano": "5.0.17",
