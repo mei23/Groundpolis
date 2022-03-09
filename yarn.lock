@@ -676,10 +676,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-favicon@2.0.19":
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/@types/koa-favicon/-/koa-favicon-2.0.19.tgz#a1b584fd64c99f16710633272292bf7d4b0ca1fa"
-  integrity sha512-QmpDuOpMn7soINt0mbOdZIaRQp9vRVR7g/MfLqozAq0gZALxqtcu6KUIWf6vxvkY5U1jzFctfaPa7I3KpAcbqA==
+"@types/koa-favicon@2.0.21":
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/@types/koa-favicon/-/koa-favicon-2.0.21.tgz#d8a0ed062a6f5e3f838fe09c21e8b3f0490369cd"
+  integrity sha512-paH1nheVhijx/VduoR/RCD/qTCiX+OI/6fHLi3mZae053Ts+gUBOrKtzl3pMTDbdEBqdLolfLje3PZbb6jW0jQ==
   dependencies:
     "@types/koa" "*"
 
@@ -5598,13 +5598,6 @@ js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
-
-js-yaml@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.0.0.tgz#f426bc0ff4b4051926cd588c71113183409a121f"
-  integrity sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q==
-  dependencies:
-    argparse "^2.0.1"
 
 js-yaml@4.1.0:
   version "4.1.0"
