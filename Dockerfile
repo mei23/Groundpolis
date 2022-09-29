@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     make \
     nasm \
     pkgconfig \
-    python \
+    python3 \
     zlib-dev
 
 RUN git submodule update --init
