@@ -1,8 +1,6 @@
 import * as os from 'os';
 import * as cluster from 'cluster';
 import * as chalk from 'chalk';
-import * as portscanner from 'portscanner';
-import * as isRoot from 'is-root';
 import { getConnection } from 'typeorm';
 
 import Logger from '../services/logger';
@@ -52,21 +50,6 @@ export async function masterMain() {
 
 		// initialize app
 		config = await init();
-
-		if (config.port == null || Number.isNaN(config.port)) {
-			bootLogger.error('The port is not configured. Please configure port.', null, true);
-			process.exit(1);
-		}
-
-		if (process.platform === 'linux' && isWellKnownPort(config.port) && !isRoot()) {
-			bootLogger.error('You need root privileges to listen on well-known port on Linux', null, true);
-			process.exit(1);
-		}
-
-		if (!await isPortAvailable(config.port)) {
-			bootLogger.error(`Port ${config.port} is already in use`, null, true);
-			process.exit(1);
-		}
 	} catch (e) {
 		bootLogger.error('Fatal error occurred during initialization', null, true);
 		process.exit(1);
@@ -89,14 +72,6 @@ export async function masterMain() {
 
 const runningNodejsVersion = process.version.slice(1).split('.').map(x => parseInt(x, 10));
 
-function isWellKnownPort(port: number): boolean {
-	return port < 1024;
-}
-
-async function isPortAvailable(port: number): Promise<boolean> {
-	return await portscanner.checkPortStatus(port, '127.0.0.1') === 'closed';
-}
-
 function showEnvironment(): void {
 	const env = process.env.NODE_ENV;
 	const logger = bootLogger.createSubLogger('env');
@@ -106,8 +81,6 @@ function showEnvironment(): void {
 		logger.warn('The environment is not in production mode.');
 		logger.warn('DO NOT USE FOR PRODUCTION PURPOSE!', null, true);
 	}
-
-	logger.info(`You ${isRoot() ? '' : 'do not '}have root privileges`);
 }
 
 /**
@@ -158,7 +131,7 @@ async function init(): Promise<Config> {
 	return config;
 }
 
-async function spawnWorkers(limit: number = 1) {
+async function spawnWorkers(limit = 1) {
 	const workers = Math.min(limit, os.cpus().length);
 	bootLogger.info(`Starting ${workers} worker${workers === 1 ? '' : 's'}...`);
 	await Promise.all([...Array(workers)].map(spawnWorker));
@@ -168,7 +141,11 @@ async function spawnWorkers(limit: number = 1) {
 function spawnWorker(): Promise<void> {
 	return new Promise(res => {
 		const worker = cluster.fork();
-		worker.on('message', message => {
+		worker.on('message', (message: any) => {
+			if (message === 'listenFailed') {
+				bootLogger.error(`The server Listen failed due to the previous error.`);
+				process.exit(1);
+			}
 			if (message !== 'ready') return;
 			res();
 		});
