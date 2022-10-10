@@ -122,7 +122,7 @@ router.get('/docs.json', async ctx => {
 	const paths = glob.sync(__dirname + `/../../../src/docs/${lang}/*.md`);
 	const docs: { path: string; title: string; }[] = [];
 	for (const path of paths) {
-		const md = fs.readFileSync(path, { encoding: 'utf8' });
+		const md = await fs.promises.readFile(path, { encoding: 'utf8' });
 		const parsed = markdown.parse(md, {});
 		if (parsed.length === 0) return;
 
