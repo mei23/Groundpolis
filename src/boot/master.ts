@@ -8,7 +8,6 @@ import { getConnection } from 'typeorm';
 import Logger from '../services/logger';
 import loadConfig from '../config/load';
 import { Config } from '../config/types';
-import { lessThan } from '../prelude/array';
 import { program } from '../argv';
 import { showMachineInfo } from '../misc/show-machine-info';
 import { initDb } from '../db/postgre';
@@ -89,8 +88,6 @@ export async function masterMain() {
 }
 
 const runningNodejsVersion = process.version.slice(1).split('.').map(x => parseInt(x, 10));
-const requiredNodejsVersion = [11, 7, 0];
-const satisfyNodejsVersion = !lessThan(runningNodejsVersion, requiredNodejsVersion);
 
 function isWellKnownPort(port: number): boolean {
 	return port < 1024;
@@ -124,11 +121,6 @@ async function init(): Promise<Config> {
 	const nodejsLogger = bootLogger.createSubLogger('nodejs');
 
 	nodejsLogger.info(`Version ${runningNodejsVersion.join('.')}`);
-
-	if (!satisfyNodejsVersion) {
-		nodejsLogger.error(`Node.js version is less than ${requiredNodejsVersion.join('.')}. Please upgrade it.`, null, true);
-		process.exit(1);
-	}
 
 	const configLogger = bootLogger.createSubLogger('config');
 	let config;
