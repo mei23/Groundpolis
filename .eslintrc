@@ -1,42 +1,50 @@
 {
 	"parserOptions": {
-		"parser": "@typescript-eslint/parser",
-		"ecmaFeatures": {
-			"jsx": true
-		}
+		"parser": "@typescript-eslint/parser"
 	},
 	"extends": [
 		"eslint:recommended",
 		"plugin:vue/recommended",
-		"plugin:react/recommended"
+		"plugin:@typescript-eslint/recommended",
+		"plugin:node/recommended"
 	],
 	"rules": {
-		"vue/require-v-for-key": 0,
-		"vue/max-attributes-per-line": 0,
-		"vue/html-indent": 0,
-		"vue/html-self-closing": 0,
-		"vue/no-unused-vars": 0,
-		"vue/attributes-order": 0,
-		"vue/require-prop-types": 0,
-		"vue/require-default-prop": 0,
-		"vue/html-closing-bracket-spacing": 0,
-		"vue/singleline-html-element-content-newline": 0,
-		"vue/no-v-html": 0,
-		"no-console": 0,
-		"no-unused-vars": 0,
-		"no-empty": 0,
-		"quotes": [
-			"error",
-			"single"
-		],
-		"jsx-quotes": [
-			"error",
-			"prefer-double"
-		]
+		"vue/require-v-for-key": "off",
+		"vue/max-attributes-per-line": "off",
+		"vue/html-indent": "off",
+		"vue/html-self-closing": "off",
+		"vue/no-unused-vars": "off",
+		"vue/attributes-order": "off",
+		"vue/require-prop-types": "off",
+		"vue/require-default-prop": "off",
+		"vue/html-closing-bracket-spacing": "off",
+		"vue/singleline-html-element-content-newline": "off",
+		"vue/no-v-html": "off",
+		"node/callback-return": "off",
+		"node/handle-callback-err": "error",
+		"node/no-callback-literal": "error",
+		"node/no-missing-import": "off",
+		"node/no-missing-require": "off",
+		"node/no-unsupported-features/es-syntax": "off",
+		"node/no-sync": ["error", { "allowAtRootLevel": true }],
+		"node/prefer-global/buffer": "error",
+		"node/prefer-global/console": "error",
+		"node/prefer-global/process": "error",
+		"node/prefer-promises/fs": "error",
+		"node/prefer-promises/dns": "error",
+		"no-process-exit": "off",
+		"no-constant-condition": ["warn", { "checkLoops": false }],
+		"no-empty": ["warn", { "allowEmptyCatch": true }],
+		"no-irregular-whitespace": ["warn", { "skipComments": true, "skipRegExps": true, "skipTemplates": true }],
+		"no-useless-escape": "off",
+		"quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-unused-vars": "off",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"@typescript-eslint/no-var-requires": "off"
 	},
-	"plugins": [
-		"react"
-	],
 	"globals": {
 		"ENV": true,
 		"VERSION": true,
