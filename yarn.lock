@@ -6598,10 +6598,11 @@ methods@^1.1.2:
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
 mfm-js@groundpolis/gpfm.js:
-  version "0.20.1-gp-1.0.3"
-  resolved "https://codeload.github.com/groundpolis/gpfm.js/tar.gz/c9feabf35841b0dc33161653e12f9494f71979d6"
+  version "0.16.3"
+  uid "15c2ad5cbab626f607157ebe1c3a8c068a8ac834"
+  resolved "https://codeload.github.com/groundpolis/gpfm.js/tar.gz/15c2ad5cbab626f607157ebe1c3a8c068a8ac834"
   dependencies:
-    twemoji-parser "14.0.x"
+    twemoji-parser "13.0.x"
 
 micromatch@^3.0.4, micromatch@^3.1.4:
   version "3.1.10"
@@ -10252,7 +10253,12 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twemoji-parser@14.0.0, twemoji-parser@14.0.x:
+twemoji-parser@13.0.x:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.0.0.tgz#bd9d1b98474f1651dc174696b45cabefdfa405af"
+  integrity sha512-zMaGdskpH8yKjT2RSE/HwE340R4Fm+fbie4AaqjDa4H/l07YUmAvxkSfNl6awVWNRRQ0zdzLQ8SAJZuY5MgstQ==
+
+twemoji-parser@14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-14.0.0.tgz#13dabcb6d3a261d9efbf58a1666b182033bf2b62"
   integrity sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==
