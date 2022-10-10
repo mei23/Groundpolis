@@ -8,7 +8,6 @@ RUN apt-get update \
 
 COPY package.json yarn.lock ./
 RUN yarn install
-RUN yarn add npm-run-all --dev
 COPY . ./
 RUN yarn build
 
