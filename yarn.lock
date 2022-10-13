@@ -2246,10 +2246,10 @@ bufferutil@^4.0.1:
   dependencies:
     node-gyp-build "~3.7.0"
 
-bull@4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/bull/-/bull-4.6.2.tgz#fdde3b13245cff79571d85c4702884dfbf419b27"
-  integrity sha512-RA6wnL+rZ2GRHMhz+UxFEn7hlLBpxPEiW4A0UY3YwWnheRA55AT4MC0PknxqO1K55pGFKSh/GpHQaj8flJMm+w==
+bull@4.10.1:
+  version "4.10.1"
+  resolved "https://registry.yarnpkg.com/bull/-/bull-4.10.1.tgz#f14974b6089358b62b495a2cbf838aadc098e43f"
+  integrity sha512-Fp21tRPb2EaZPVfmM+ONZKVz2RA+to+zGgaTLyCKt3JMSU8OOBqK8143OQrnGuGpsyE5G+9FevFAGhdZZfQP2g==
   dependencies:
     cron-parser "^4.2.1"
     debuglog "^1.0.0"
