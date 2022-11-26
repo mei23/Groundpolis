@@ -181,7 +181,7 @@
 		"koa-views": "8.0.0",
 		"langmap": "0.0.16",
 		"lookup-dns-cache": "2.1.0",
-		"markdown-it": "12.3.2",
+		"markdown-it": "13.0.1",
 		"markdown-it-anchor": "8.4.1",
 		"matter-js": "0.18.0",
 		"mfm-js": "groundpolis/gpfm.js",
