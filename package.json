@@ -213,7 +213,7 @@
 		"re2": "1.17.4",
 		"reconnecting-websocket": "4.4.0",
 		"redis": "3.1.2",
-		"redis-lock": "0.1.4",
+		"redis-lock": "1.0.0",
 		"reflect-metadata": "0.1.13",
 		"regenerator-runtime": "0.13.7",
 		"rename": "1.0.4",
