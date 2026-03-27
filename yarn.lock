@@ -549,10 +549,10 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
-"@types/double-ended-queue@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@types/double-ended-queue/-/double-ended-queue-2.1.1.tgz#f077386134f0f736d927812c85c43a04f21ddc27"
-  integrity sha512-O2+umEIlHBVyi+ePmucPjpINqTvSnsz+hAok0D4IpvrOsIsDr6c34B0AbNXW2UDVYuxbv51z5dxnrRt23ohgWg==
+"@types/double-ended-queue@2.1.7":
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@types/double-ended-queue/-/double-ended-queue-2.1.7.tgz#02c24d0a3539a38c51ccb46e4102c659e8ad0c91"
+  integrity sha512-OVbdb2iOJakEg/Ou6dVZsH0LLxlO+GFjc1FB2W8/jT7bnhoFVJwnZOqi/H26ospeMBaEbGiX3Qy2a7r6pfZKXQ==
 
 "@types/escape-regexp@0.0.1":
   version "0.0.1"
