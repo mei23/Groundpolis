@@ -199,7 +199,7 @@
 		"photoswipe": "5.2.4",
 		"postcss": "8.4.19",
 		"postcss-loader": "7.0.1",
-		"prismjs": "1.28.0",
+		"prismjs": "1.30.0",
 		"private-ip": "2.3.4",
 		"probe-image-size": "7.2.3",
 		"promise-limit": "2.7.0",
