@@ -238,7 +238,7 @@
 		"three": "0.125.0",
 		"throttle-debounce": "3.0.1",
 		"tinycolor2": "1.4.2",
-		"tmp": "0.2.1",
+		"tmp": "0.2.6",
 		"ts-loader": "9.4.1",
 		"ts-node": "10.9.1",
 		"twemoji-parser": "14.0.0",
